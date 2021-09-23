@@ -3,3 +3,16 @@
 body {
     font-family: 'EB Garamond', serif;
 }
+
+header {
+    margin: 0;
+}
+
+.logo {
+    background: url('../images/daisy.lindsay-gunn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+}
