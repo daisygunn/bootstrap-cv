@@ -164,6 +164,7 @@ header {
     margin-bottom: 20px;
     display: block;
     clear: both;
+    width: 100%;
 }
 
 .personal-info-item .key,
