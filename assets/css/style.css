@@ -5,14 +5,7 @@
     background-color: #074F57;
 }
 
-.ui-menu-color a {
-    color: whitesmoke;
-    list-style: none;
-}
 
-.ui-menu-color:active {
-    background-color: #5CA4A9;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -49,7 +42,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 360px;
+    min-height: 300px;
     transition: all .5s ease-in-out;
     padding-right: 0;
 }
@@ -58,10 +51,19 @@ header {
 
 #navbar {
     background-color: #FF6B6B;
+    margin: 0;
 }
 
 .nav-container {
     font-size: 0;
+}
+
+.ui-menu-color {
+    background-color: #FF6B6B;
+}
+
+.ui-menu-color:active {
+    background-color: #5CA4A9;
 }
 
 .list-inline-item:not(:last-child) {
@@ -69,5 +71,36 @@ header {
 }
 
 #navbar li {
+    font-size: 14px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    color: whitesmoke;
+    list-style: none;
+    height: 100px;
+}
+
+.menuitem a:hover {
+
+}
+
+.menuitem a i {
+    display: block;
+    font-size: 26px;
+    padding-top: 15px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
     font-size: 14px;
 }
