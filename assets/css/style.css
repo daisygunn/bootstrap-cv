@@ -5,10 +5,18 @@
     background-color: #074F57;
 }
 
-
+/* General styling */
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.general-sub {
+    color: whitesmoke;
 }
 
 /* Headings */
@@ -87,9 +95,6 @@ header {
     height: 100px;
 }
 
-.menuitem a:hover {
-
-}
 
 .menuitem a i {
     display: block;
@@ -103,4 +108,11 @@ header {
     padding-top: 5px;
     text-align: center;
     font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    background-color:  #074F57;
+    min-height: 100px;
 }
