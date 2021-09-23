@@ -1,11 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,500&family=Ephesis&family=Roboto:wght@500;900&display=swap');
+
+/* Colours  */
+.bg-color-name-title {
+    background-color: #074F57;
+}
+
 
 body {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Headings */
 
 header {
     margin: 0;
+}
+
+.heading {
+    margin-left: 50px;
+    
+}
+
+#name {
+    color: whitesmoke;
+    font-weight: 700;
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: 'Ephesis', cursive;
+}
+
+#title {
+    color: whitesmoke;
+    font-weight: 500;
+    margin: 20px 0 60px 0;
+    font-size: 26px;
 }
 
 .logo {
