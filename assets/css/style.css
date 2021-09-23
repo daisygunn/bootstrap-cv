@@ -17,6 +17,15 @@ h1, h2, h3, h4 {
 
 .general-sub {
     color: whitesmoke;
+    padding-top: 10px;
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.inline-block {
+    display: inline-block;
 }
 
 /* Headings */
@@ -115,4 +124,38 @@ header {
 footer {
     background-color:  #074F57;
     min-height: 100px;
+    color:whitesmoke;
+    padding: 5px 20px 20px 20px;
+}
+
+.cv-pdf i {
+    color:whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #5CA4A9;
+}
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    color:whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 0;
+    width: 32px;
+    height: 32px;
+    line-height: 7px;
+    background: #8f8f8f;
+    border-radius: 50%;
+    transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #5CA4A9;
 }
