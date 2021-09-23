@@ -5,6 +5,14 @@
     background-color: #074F57;
 }
 
+.ui-menu-color a {
+    color: whitesmoke;
+    list-style: none;
+}
+
+.ui-menu-color:active {
+    background-color: #5CA4A9;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -43,4 +51,23 @@ header {
     background-size: cover;
     min-height: 360px;
     transition: all .5s ease-in-out;
+    padding-right: 0;
+}
+
+/* Navbar */
+
+#navbar {
+    background-color: #FF6B6B;
+}
+
+.nav-container {
+    font-size: 0;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+#navbar li {
+    font-size: 14px;
 }
