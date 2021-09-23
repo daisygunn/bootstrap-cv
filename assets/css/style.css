@@ -28,6 +28,25 @@ h1, h2, h3, h4 {
     display: inline-block;
 }
 
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: 'Ephesis', cursive;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #5CA4A9;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
 /* Headings */
 
 header {
@@ -35,8 +54,7 @@ header {
 }
 
 .heading {
-    margin-left: 50px;
-    
+    margin-left: 50px;  
 }
 
 #name {
@@ -119,6 +137,17 @@ header {
     font-size: 14px;
 }
 
+/* Three Reasons */
+.three-reasons {
+    background-color: whitesmoke;
+}
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+.three-reasons-icon {
+    color: #FF6B6B;
+    font-size: 26px;
+}
 /* Footer */
 
 footer {
