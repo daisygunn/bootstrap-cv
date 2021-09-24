@@ -301,3 +301,26 @@ footer {
     content: '';
     background: whitesmoke;   
 }
+
+/* Contact page */
+
+.bg-color-contact {
+    background-color: whitesmoke;
+}
+
+.contact-heading {
+    color:#FF6B6B;
+    margin: 20px 0;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.btn {
+    margin: 10px 0;
+    background-color: #FF6B6B;
+    color: white;
+}
