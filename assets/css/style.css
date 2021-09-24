@@ -42,11 +42,11 @@ h1, h2, h3, h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: 'Ephesis', cursive;
     font-weight: 700;
     margin-top: 25px;
-    /* color: #5CA4A9; */
     margin-bottom: 40px;
     font-size: 40px;
 }
@@ -156,7 +156,7 @@ header {
 /* Personal Info */
 
 .personal-info {
-    background-color: rgba(92, 164, 169, 0.5);
+    background-color: rgba(92, 164, 169, 0.7);
     color:whitesmoke;
 }
 
@@ -256,4 +256,48 @@ footer {
     padding: 3px 30px 2px 10px;
     color:whitesmoke;
     background-color: rgba(211,211,211, 0.3);
+}
+
+/* Work history */
+.history-heading {
+    margin-bottom: 20px;
+}
+
+.history-items {
+    margin-bottom: 25px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 4em 2em 0em 2em;
+    color: whitesmoke;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before{
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.timeline-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: whitesmoke;   
 }
