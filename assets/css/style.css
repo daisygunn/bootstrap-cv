@@ -324,3 +324,6 @@ footer {
     background-color: #FF6B6B;
     color: white;
 }
+
+/* Map */
+div#map {min-height: 360px;}
