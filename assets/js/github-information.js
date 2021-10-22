@@ -17,6 +17,26 @@ function userInformationHTML(user) {
     </div>`
 }
 
+function repoInformationHTML(repos) {
+    if (repos.length === 0) {
+        return `<div class="clearfix repo-list">No repos!</div>`;
+    }
+    var listItemsHTML = repos.map(function(repo) {
+        return `<li>
+            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+        </li>`
+    });
+
+    return `<div class="clearfix repo-list">
+        <p>
+            <strong>Repo List:</strong>
+            <ul>
+                ${listItemsHTML.join("\n")}
+            </ul>
+        </p>
+    </div>`;
+}
+
 function fetchGitHubInformation(event) {
     var username = $("#gh-username"). val();
     if (!username) {
@@ -27,12 +47,15 @@ function fetchGitHubInformation(event) {
     // Promise when: something is done then: do something
     $.when(
         // get JSON response from github API using username entered
-        $.getJSON(`https://api.github.com/users/${username}`)
+        $.getJSON(`https://api.github.com/users/${username}`),
+        $.getJSON(`https://api.github.com/users/${username}/repos`)
     ).then(
         // use the response from the API to add the user info html into the div
-        function(response) {
-            var userData = response;
+        function(firstResponse, secondResponse) {
+            var userData = firstResponse[0];
+            var repoData = secondResponse[0];
             $("#gh-user-data").html(userInformationHTML(userData));
+            $("#gh-repo-data").html(repoInformationHTML(repoData));
             // display error messages 404 / page not found otherwise just print the error message to the console
         }, function(errorResponse) {
             if (errorResponse.status === 404) {
