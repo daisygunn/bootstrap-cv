@@ -15,16 +15,6 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("user_JjE46q3F9uYy8bhsTGbIF");
-            var templateParams = {
-                name: 'Daisy',
-                notes: 'I would like to work on...'
-            };
-            // emailjs.send("service_m29ys4m","project-request", templateParams)
-            //     .then(function (response) {
-            //         console.log('SUCCESS!', response.status, response.text);
-            //     }, function (error) {
-            //         console.log('FAILED...', error);
-            //     });
         })();
     </script>
 </head>
@@ -88,7 +78,7 @@
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Full Name"
                             required />
                         <input type="emailaddress" name="emailaddress" id="email" class="form-control" placeholder="Email" required />
-                        <textarea name="project-summary" id="project-summary" rows="5" class="form-control"
+                        <textarea name="project-summary" id="projectsummary" rows="5" class="form-control"
                             placeholder="Project Summary" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
